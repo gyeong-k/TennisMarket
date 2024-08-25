@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <!--<link rel="stylesheet" href="main.css" />-->
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #txt_welcome {
+        text-align: center;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .card {
+        text-align: center;
+        display: inline-block;
+      }
+
+      .card_title {
+        font-size: 20px;
+      }
+
+      .card_button {
+        font-size: 25px;
+        width: 150px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tennis Market</h1>
+    <div id="txt_welcome">
+      <!--의미 없는 구역-->
+      Welcome to Tennis Market <br />
+      Enjoy your shopping
+      <br />
+      <br />
+      <a href="./orderlist.html">order list</a>
+    </div>
+
+    <div class="parent">
+      <div class="card">
+        <img class="card_img" src="./img/redRacket.png" />
+        <p class="card_title">
+          <!--의미 없는 단락-->
+          Red Racket
+        </p>
+        <input
+          class="card_button"
+          type="button"
+          value="order"
+          onclick="location.href='/order?productoId=1';"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/blueRacket.png" />
+        <p class="card_title">
+          <!--의미 없는 단락-->
+          Blue Racket
+        </p>
+        <input
+          class="card_button"
+          type="button"
+          value="order"
+          onclick="alert('2');"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/blackRacket.png" />
+        <p class="card_title">
+          <!--의미 없는 단락-->
+          Black Racket
+        </p>
+        <input
+          class="card_button"
+          type="button"
+          value="order"
+          onclick="alert('3');"
+        />
+      </div>
+    </div>
+  </body>
+</html>
